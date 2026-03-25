@@ -3,18 +3,18 @@
 class Lazyopencode < Formula
   desc "Terminal UI for managing opencode sessions"
   homepage "https://github.com/actionscripted/lazyopencode"
-  version "0.1.2"
+  version "0.1.3"
   license "MIT"
 
   on_macos do
     on_intel do
       url "https://github.com/actionscripted/lazyopencode/releases/download/v#{version}/lazyopencode-darwin-amd64"
-      sha256 "362fae473f4c54e19d990fae60646b960230e5b4cb88dfd62a2fcb40a883d871"
+      sha256 "70cb4e648ac2dc1a31ca4f830f6c67e153997be45af8361c566f7d46005a577f"
     end
 
     on_arm do
       url "https://github.com/actionscripted/lazyopencode/releases/download/v#{version}/lazyopencode-darwin-arm64"
-      sha256 "fd2372eeccd3bce7e0af3b521ee84e83bff659298e463e5a770952e897729ebd"
+      sha256 "352d2edfe1442245d4624a8272815361128060e5f5d7512b8fd3205e3bc2d0d1"
     end
   end
 
