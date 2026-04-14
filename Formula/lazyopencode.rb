@@ -5,21 +5,21 @@
 class Lazyopencode < Formula
   desc "Terminal UI for managing opencode sessions"
   homepage "https://github.com/actionscripted/lazyopencode"
-  version "0.2.1"
+  version "0.3.0"
   license "MIT"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.2.1/lazyopencode_0.2.1_darwin_amd64.tar.gz"
-      sha256 "30861008a9a56fdd55d44dd44bf759430db4f1eca2eb7b955276bdde1edc7864"
+      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.3.0/lazyopencode_0.3.0_darwin_amd64.tar.gz"
+      sha256 "4f9d27657e4da69a6dc98723b0b360405336bbb3d7ddd0bd83e4416d59a6107f"
 
       define_method(:install) do
         bin.install "lazyopencode"
       end
     end
     if Hardware::CPU.arm?
-      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.2.1/lazyopencode_0.2.1_darwin_arm64.tar.gz"
-      sha256 "8acc5d59551d262994f26f080a48a4e3c370cf8716e33a2287f68f0ce6721275"
+      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.3.0/lazyopencode_0.3.0_darwin_arm64.tar.gz"
+      sha256 "4922aeb146ae9955e6ac06939e97dc45d420d49a5b1587bcb9883f3bd505b6cc"
 
       define_method(:install) do
         bin.install "lazyopencode"
@@ -29,15 +29,15 @@ class Lazyopencode < Formula
 
   on_linux do
     if Hardware::CPU.intel? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.2.1/lazyopencode_0.2.1_linux_amd64.tar.gz"
-      sha256 "8354a21a716a94726e47897c3762c07aa0d35b78369b57317e43fa05446c564c"
+      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.3.0/lazyopencode_0.3.0_linux_amd64.tar.gz"
+      sha256 "248aca6062f45c16852cb61bdcafd6c986c717d8b62945099dd931a3d3e938e4"
       define_method(:install) do
         bin.install "lazyopencode"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.2.1/lazyopencode_0.2.1_linux_arm64.tar.gz"
-      sha256 "5891fecdf02889a9a7df3c4777932ae5970cb7c8487fe2ed3246202228e8fe5a"
+      url "https://github.com/ActionScripted/lazyopencode/releases/download/v0.3.0/lazyopencode_0.3.0_linux_arm64.tar.gz"
+      sha256 "f84cd01ae6f432be8076b01a3e9b7f361225e3ac9eb24aa6bdd207cc9edf6402"
       define_method(:install) do
         bin.install "lazyopencode"
       end
